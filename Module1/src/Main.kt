@@ -15,6 +15,11 @@ fun main(args: Array<String>) {
 //        } \nPerimeter: ${rectangle.perimeter(width, height)}"
 //    )
 
+    if (args.isEmpty()) {
+        println("Please provide a grade")
+        return
+    }
+
     val gradeIndex = GradeIndex()
     val grade = args[0].toInt()
     println("Grade: $grade \nGrade Index: ${gradeIndex.getGradeIndex(grade)}")
